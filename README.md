@@ -1,12 +1,27 @@
-# parking_lot #
-
-## Build & Run ##
-
-```sh
-$ cd parking_lot
-$ sbt
-> jetty:start
-> browse
+#Parking-Lot
+##requirements:
+```
+scala : 2.12
+java  : 1.8
+sbt   : 1.2.8
 ```
 
-If `browse` doesn't launch your browser, manually open [http://localhost:8080/](http://localhost:8080/) in your browser.
+### Used Language : Scala
+Require proper scala and sbt set up for project
+
+##Usage:
+
+####build : 
+`./bin/setup`
+or
+`sbt clean compile test assembly` (from the project root which is `.` here)
+
+####run :
+#####file mode:
+```
+./bin/parking_lot file_path
+```
+#####interactive mode:
+```
+./bin/parking_lot
+```
