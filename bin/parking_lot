@@ -4,11 +4,12 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 jar_name="$DIR/../distribution/parking-lot-assembly-1.0.0.jar"
 
+main_class="com.gojek.parking.ParkingMain"
+
+
 if [ -z "$1" ] ; then
         java -cp $jar_name $main_class
         exit 1
-
 else
 	java -cp $jar_name $main_class $1
-
 fi
